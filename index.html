@@ -21,13 +21,13 @@
   position: relative;
   width: 100%;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 20px auto; /* <- tambahkan margin-top */
   text-align: center;
 }
 
 .top-logo {
-  width: 180px; /* ukuran logo */
-  margin-bottom: -30px; /* overlap sedikit ke banner */
+  width: 180px;
+  margin-bottom: -30px;
   z-index: 2;
   position: relative;
 }
@@ -164,17 +164,16 @@
   </style>
 </head>
 <body>
-  <!-- Banner klikable -->
-  <a href="https://glorygame99vip.online/?ref=GLORYGAME99ZZ" target="_blank">
-    <img src="images/logo3.png" alt="Logo GloryGame99" class="top-logo" />
-    <img src="images/logo2.png" alt="Event Togel Tebak Angka" style="width:100%; max-width:600px; display:block; margin: 0 auto;" />
-  </a>
+<!-- Logo & Banner dibungkus div agar mudah diposisikan -->
+<div class="logo-banner-wrapper">
+  <!-- Logo di tengah atas -->
+  <img src="images/logo3.png" alt="Logo GloryGame99" class="top-logo" />
 
- <header>
-  <div class="logo-caption">
-    Update Prediksi Togel Setiap Hari – GloryGame99
-  </div>
-</header>
+  <!-- Banner -->
+  <a href="https://glorygame99vip.online/?ref=GLORYGAME99ZZ" target="_blank">
+    <img src="images/logo2.png" alt="Event Togel Tebak Angka" class="banner-img" />
+  </a>
+</div>
 
   <div class="grid" id="grid"></div>
 
