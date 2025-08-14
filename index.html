@@ -46,13 +46,16 @@
     .right-side {
       flex: 1;
     }
-    .logo-caption {
-      flex: 0;
-      font-size: 1.5rem;
-      color: var(--accent);
-      font-weight: bold;
-      text-align: center;
-    }
+.logo-caption {
+  font-size: 1.5rem;
+  color: var(--accent);
+  font-weight: bold;
+  text-align: center;
+  margin: 20px auto;
+  white-space: nowrap;         /* ✅ Mencegah teks terpotong ke bawah */
+  overflow: hidden;            /* Opsional, mencegah overflow */
+  text-overflow: ellipsis;     /* Opsional, untuk pemotongan dengan "..." jika kepanjangan */
+}
 
     /* Grid konten prediksi */
     .grid {
@@ -146,13 +149,11 @@
     <img src="images/logo2.png" alt="Event Togel Tebak Angka" style="width:100%; max-width:600px; display:block; margin: 0 auto;" />
   </a>
 
-  <header>
-    <div class="header-content">
-      <div class="left-side"><!-- spacer kiri --></div>
-      <div class="logo-caption">Update Prediksi Togel Setiap Hari – GloryGame99</div>
-      <div class="right-side"><!-- spacer kanan --></div>
-    </div>
-  </header>
+ <header>
+  <div class="logo-caption">
+    Update Prediksi Togel Setiap Hari – GloryGame99
+  </div>
+</header>
 
   <div class="grid" id="grid"></div>
 
