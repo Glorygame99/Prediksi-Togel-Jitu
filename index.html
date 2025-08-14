@@ -52,9 +52,11 @@
   font-weight: bold;
   text-align: center;
   margin: 20px auto;
-  white-space: nowrap;         /* ✅ Mencegah teks terpotong ke bawah */
-  overflow: hidden;            /* Opsional, mencegah overflow */
-  text-overflow: ellipsis;     /* Opsional, untuk pemotongan dengan "..." jika kepanjangan */
+  white-space: normal;       /* ✅ Izinkan teks ke baris baru */
+  overflow: visible;         /* ✅ Jangan potong teks */
+  text-overflow: unset;      /* ✅ Hilangkan ellipsis (...) */
+  max-width: 90%;            /* ✅ Hindari melebihi layar */
+  word-break: break-word;    /* ✅ Pecah kata jika perlu */
 }
 
     /* Grid konten prediksi */
